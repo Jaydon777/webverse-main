@@ -1,0 +1,59 @@
+<%- include("../../views/templates/header") -%>
+
+<link rel="stylesheet" href="/styles/student/studLeave.css">
+
+
+<h1>Leave Request</h1>
+<div class="container">
+    <form action="/action_page.php">
+    <div class="row">
+      <div class="col-15">
+        <label for="leavetype">Leave Type</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="leave" placeholder="Leavetype">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-15">
+        <label for="leavedate" >Leave Date</label>
+      </div>
+      <div class="col-75">
+        <!-- <input type="text" id="lname" name="data" placeholder="Your last name.."> -->
+        <input type="date">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-15">
+        <label for="text">Leave Time</label>
+      </div>
+      <div class="col-75">
+        <input type="time">
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-15">
+        <label for="subject">Leave duration</label>
+      </div>
+       <div class="col-75">
+        <input type="text" placeholder="No of Hours">
+      </div>
+    </div>
+    <br><br>
+    <div class="btn">
+      <input type="submit">
+    </div>
+    </form>
+  </div>
+  
+
+
+
+
+
+
+
+
+<%- include("../../views/templates/footer") -%>

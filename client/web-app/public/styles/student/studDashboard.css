@@ -1,0 +1,84 @@
+body{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+h2{
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    font-size: 1.5rem;
+}
+
+.row h2{
+    text-align: left;
+}
+
+.col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overall{
+    position: relative;
+    left: 70px;
+    margin-top: 3%;
+}
+
+.queries{
+    margin-bottom: 5%;
+}
+
+.card-box{
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid #c9c9c9;
+    position: relative;
+    width: 70%;
+    height: 100px;
+    text-align: center;
+    align-items: center;
+    box-shadow: 3px 3px;
+    color:  #213363!important;
+    display:flex;
+    justify-content: center;
+}
+/* .box{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+} */
+
+.card-box:hover{
+    border: none;
+    cursor: pointer;
+    background-color: #c6c6c6;
+    color: white;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+h5{
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+h3{
+    color: #000;
+    font-size: 1.2rem;
+}
+
+.info{
+    border: solid 1px #213363;
+    text-align: left;
+    border-radius: 20px;
+    background-color: #213363;
+    color: #fff;
+    padding: 2%;
+}
+
+.card-body:hover{
+    color: #fff;
+}

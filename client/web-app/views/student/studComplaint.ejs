@@ -1,0 +1,60 @@
+
+<%- include("../../views/templates/header") -%>
+<link rel="stylesheet" href="/styles/student/studComplaint.css">
+
+
+<h1>Raise a Complaint</h1>
+<div class="container">
+    <form action="/action_page.php">
+    <div class="row">
+      <div class="col-15">
+        <label for="complainttype">Complaint Type</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="leave" placeholder="Complaint type">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-15">
+        <label for="complaintdate" >Complaint Date</label>
+      </div>
+      <div class="col-75">
+        <!-- <input type="text" id="lname" name="data" placeholder="Your last name.."> -->
+        <input type="date">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-15">
+          <label for="complaintdesc">Complaint Description</label>
+        </div>
+        <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Write your complaint.." style="height:80px"></textarea>
+        </div>
+      </div>
+   <div class="row">
+      <div class="col-15">
+        <label for="subject">Complaint Severity</label>
+      </div>
+       <div class="col-75">
+        <select id="level" name="complaint" form="complaint">
+            <option value="verylow">Very Low</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+            <option value="veryhigh">Very High</option>
+          </select>
+      </div>
+    </div>
+    <br><br>
+    <div class="btn">
+      <input type="submit">
+    </div>
+    </form>
+  </div>
+  
+
+
+
+  
+
+<%- include("../../views/templates/footer") -%>

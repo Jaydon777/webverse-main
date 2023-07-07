@@ -1,0 +1,96 @@
+
+<%- include("../../views/templates/header") -%>
+<link rel="stylesheet" href="/styles/student/studEvent.css">
+
+
+<h1>Event Details</h1>
+<div class="container">
+    <form action="/action_page.php">
+    <div class="row">
+      <div class="col-15">
+        <label for="eventname">Event Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text"  name="namee" placeholder="Name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-15">
+        <label for="eventdate" >Event Date</label>
+      </div>
+      <div class="col-75">
+        <input type="date">
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-15">
+          <label for="eventdesc">Event Description</label>
+        </div>
+        <div class="col-75">
+            <textarea id="subject" name="subject" placeholder="Brief about event.." style="height:80px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-15">
+          <label for="text">Event Time</label>
+        </div>
+        <div class="col-75">
+          <input type="time">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-15">
+          <label for="eventvenue">Event Venue</label>
+        </div>
+        <div class="col-75">
+          <input type="text"  name="venue" placeholder="Venue">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-15">
+          <label for="eventorgan">Event Organizer</label>
+        </div>
+        <div class="col-75">
+          <input type="text"  name="organ" placeholder="Name of organizer">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-15">
+          <label for="count">Participant Count</label>
+        </div>
+        <div class="col-75">
+          <input type="text"  name="Participants" placeholder="No of Participants">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-15">
+          <label for="host">Hosted By</label>
+        </div>
+        <div class="col-75">
+          <input type="text"  name="host" placeholder="Name">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-15">
+          <label for="count">Poster</label>
+        </div>
+        <div class="col-75">
+            <div class="upload-btn-wrapper">
+                <button class="btn1">Upload a file</button>
+                <input type="file" name="myfile" />
+              </div>
+        </div>
+      </div>
+    <br><br>
+    <div class="btn">
+      <input type="submit">
+    </div>
+    </form>
+  </div>
+  
+
+
+
+  
+
+<%- include("../../views/templates/footer") -%>

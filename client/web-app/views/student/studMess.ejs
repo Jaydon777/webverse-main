@@ -1,0 +1,34 @@
+
+<%- include("../../views/templates/header") -%>
+<link rel="stylesheet" href="/styles/student/studMess.css">
+
+<h1>Mess details</h1>
+
+<div class="row row-cols-1 row-cols-md-2 g-4">
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Mess Choice</h3>
+          <h5>Mess Type</h5>
+          <br><br>
+          <select id="level" name="complaint" form="complaint">
+            <option value="veg">VEG MESS</option>
+            <option value="nonveg">NON-VEG MESS</option>
+            <option value="spl">SPECIAL MESS</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title">Approved Mess</h3>
+          <h5>Success</h5>
+          <h5>Mess Type: VEG</h5>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+<%- include("../../views/templates/footer") -%>

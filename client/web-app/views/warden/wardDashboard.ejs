@@ -1,0 +1,77 @@
+<%- include("../../views/templates/header") -%>
+
+<link rel="stylesheet" href="styles/warden/wardDashboard.css" />
+
+<h2 style="margin-top: 2%; margin-bottom: 3%">WARDEN DASHBOARD</h2>
+
+<div class="row">
+  <div class="col-lg-4 info">
+    <h2>Info:</h2>
+    <h5>Name: <%=name%></h5>
+    <h5>ID: <%=id%></h5>
+    <h5>Incharge of: <%=block%> block</h5>
+  </div>
+
+  <div class="col-lg-8 overall">
+    <div class="row queries">
+      <div class="col-lg-4">
+        <a href="/warden/create" style="text-decoration: none">
+        <div class="card-box">
+            <div class="card-body">
+              <h3>Create Room</h3>
+            </div>
+        </div>
+      </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="" style="text-decoration: none"><div class="card-body">
+        <div class="card-box">
+              <h3>Room Details</h3>
+            </div>
+        </div>
+      </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="/warden/room" style="text-decoration: none">
+        <div class="card-box">
+            <div class="card-body">
+              <h3>Assign Rooms</h3>
+            </div>
+        </div>
+      </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <a href="/warden/complaint" style="text-decoration: none">
+        <div class="card-box">
+            <div class="card-body">
+              <h3>Complaints</h3>
+            </div>
+        </div>
+      </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="/warden/mess" style="text-decoration: none">
+        <div class="card-box">
+            <div class="card-body">
+              <h3>Mess Allocation</h3>
+            </div>
+        </div>
+      </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="/warden/leave" style="text-decoration: none">
+        <div class="card-box">
+            <div class="card-body">
+              <h3>Leave Approval</h3>
+            </div>
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../javascripts/studDashboard.js"></script>
+<%- include("../../views/templates/footer") -%>

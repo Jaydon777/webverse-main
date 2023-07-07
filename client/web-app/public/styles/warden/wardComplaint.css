@@ -1,0 +1,67 @@
+h1{
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+}
+/* .text{
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: rgba(149, 149, 149, 0.409);
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+} */
+
+.card{
+    padding: 3%;
+    background-color: #eee;
+    border: solid 0.5px black;
+    border: solid 1px #213363;
+    text-align: left;
+    border-radius: 20px;
+    background-color: #213363;
+    color: #fff;
+    width: 500px;
+}
+
+
+h5{
+    padding-top: 30px;
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20px;
+
+}
+.button:hover{
+    background-color: #46458C;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.button1{
+    background-color: green;
+}
+.button2{
+    background-color: rgba(211, 32, 32, 0.79);
+}

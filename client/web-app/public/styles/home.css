@@ -1,0 +1,34 @@
+body{
+    padding: 3%;
+}
+
+button{
+    border-radius: 10px;
+    background-color: #213363;
+    color: aliceblue;
+    border: none;
+    padding: 3%;
+}
+
+button:hover{
+    background-color: #46458C;
+}
+
+h3{
+    margin-bottom: 3%;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container{
+    text-align: center;
+    margin-top: 5%;
+    border: solid 0.5px #c6c6c6;
+    border-radius: 20px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}

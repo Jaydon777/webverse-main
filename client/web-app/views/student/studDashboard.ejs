@@ -1,0 +1,155 @@
+<%- include("../../views/templates/header") -%>
+
+<link rel="stylesheet" href="styles/student/studDashboard.css" />
+
+<h2 style="margin-top: 2%">STUDENT DASHBOARD</h2>
+
+<div class="row">
+  <div class="col-lg-4 info">
+    <h2>Info:</h2>
+    <h5>Name: <%=name%></h5>
+    <h5>RegNo: <%=regNo%></h5>
+    <br /><br />
+    <h2>Hostel Details:</h2>
+    <h5>Block: <%=block%></h5>
+    <h5>Room No: <%=roomNo%></h5>
+    <h5>Mess Type: <%=messType%></h5>
+  </div>
+
+  <div class="col-lg-8 overall">
+    <div class="row queries">
+      <div class="col-lg-4">
+        <a href="/student/room" style="text-decoration: none">
+        <div class="card-box">
+            <div class="card-body">
+              <h3>Room Details</h3>
+            </div>
+        </div>
+      </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="/student/complaint" style="text-decoration: none"><div class="card-body">
+        <div class="card-box">
+              <h3>Complaints</h3>
+            </div>
+        </div>
+      </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="/student/course" style="text-decoration: none">
+        <div class="card-box">
+            <div class="card-body">
+              <h3>Courses</h3>
+            </div>
+        </div>
+      </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+        <a href="/student/mess" style="text-decoration: none">
+        <div class="card-box">
+            <div class="card-body">
+              <h3>Mess</h3>
+            </div>
+        </div>
+      </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="/student/leave" style="text-decoration: none">
+        <div class="card-box">
+            <div class="card-body">
+              <h3>Leave Request</h3>
+            </div>
+        </div>
+      </a>
+      </div>
+      <div class="col-lg-4">
+        <a href="/student/event" style="text-decoration: none">
+        <div class="card-box">
+            <div class="card-body">
+              <h3>Events</h3>
+            </div>
+        </div>
+      </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="row row-cols-1 row-cols-md-4 g-4">
+  <div class="col">
+    <div class="card-box info">
+      <div>
+        <h2>Info</h2>
+        <h5>Name: John Doe</h5>
+        <h5>RegNo: 21BCE0000</h5>
+        <h5>Email: xyz@email.com</h5>
+        <h5>Phone Number:XXXXXXXXXX</h5>
+        <br /><br />
+        <h3>Hostel Details:</h3>
+        <h5>Block: A</h5>
+        <h5>Room No:710</h5>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row row-cols-lg-3 row-cols-md-3 g-3">
+  <div class="col">
+    <div class="card-box">
+      <a href="" style="text-decoration: none"
+        ><div class="card-body">
+          <h5>Complaints</h5>
+        </div></a
+      >
+    </div>
+  </div>
+  <div class="col">
+    <div class="card-box">
+      <a href="" style="text-decoration: none"
+        ><div class="card-body">
+          <h5>Room Details</h5>
+        </div></a
+      >
+    </div>
+  </div>
+  <div class="col">
+    <div class="card-box">
+      <a href="" style="text-decoration: none"
+        ><div class="card-body">
+          <h5>Courses</h5>
+        </div></a
+      >
+    </div>
+  </div>
+  <div class="col">
+    <div class="card-box">
+      <a href="" style="text-decoration: none"
+        ><div class="card-body">
+          <h5>Mess</h5>
+        </div></a
+      >
+    </div>
+  </div>
+  <div class="col">
+    <div class="card-box">
+      <a href="" style="text-decoration: none"
+        ><div class="card-body">
+          <h5>Events</h5>
+        </div></a
+      >
+    </div>
+  </div>
+  <div class="col">
+    <div class="card-box">
+      <a href="" style="text-decoration: none"
+        ><div class="card-body">
+          <h5>Leave</h5>
+        </div></a
+      >
+    </div>
+  </div>
+</div> -->
+
+<script src="../javascripts/studDashboard.js"></script>
+<%- include("../../views/templates/footer") -%>

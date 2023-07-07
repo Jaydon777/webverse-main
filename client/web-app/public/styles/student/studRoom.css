@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+
+}
+/* .text{
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: rgba(149, 149, 149, 0.409);
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+} */
+
+.card{
+    padding: 3%;
+    background-color: #eee;
+    border: solid 0.5px black;
+    border: solid 1px #213363;
+    text-align: left;
+    border-radius: 20px;
+    background-color: #213363;
+    color: #fff;
+}
+
+
+h5{
+    padding-top: 30px;
+}

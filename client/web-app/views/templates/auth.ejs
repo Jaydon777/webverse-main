@@ -1,0 +1,99 @@
+<%- include("header") -%>
+
+<link rel="stylesheet" href="/styles/auth.css" />
+
+<h3 style="margin-top: 2%;"><%=type%> PORTAL</h3>
+
+<div class="parent">
+  <div class="toggle-wrapper">
+    <div class="segmented-control">
+      <input
+        type="radio"
+        name="flight-type"
+        value="coach"
+        id="titleBtn"
+        checked
+      />
+      <label for="titleBtn">Log In</label>
+
+      <input type="radio" name="flight-type" value="business" id="genreBtn" />
+      <label for="genreBtn">Sign Up</label>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+    <div id="titleField" class="field title">
+      <form action="/handleLogin" id="titleForm" class="slide-left" method="post">
+        <h4>Welcome Back!</h4>
+
+        <input name="regNo" type="text" placeholder="Enter your reg number">
+        <input name="password" type="password" placeholder="Enter your password">
+        
+        <button id="fetchButton" class="mainBtn text-ani" type="submit">Log In</button>
+      </form>
+    </div>
+
+    <div id="titleField" class="field genre">
+      <form action="/handleSignup" id="genreForm" class="slide-right" method="post">
+        <h4>Sign Up Today</h4>
+        <input type="text" name="name" id="genreInput" placeholder="Enter Your Name" autocomplete="off" required>
+        <input type="text" name="regNo" id="authorInput" placeholder="Enter Your Reg No" autocomplete="off" required>
+        <input type="text" name="block" placeholder="Enter Your Hostel Block">
+        <input type="password" name="password" id="" placeholder="Create A Password">
+        <input type="text" name="roomNo" id="" placeholder="Enter Your Room No">
+        <button id="fetchButton2" class="mainBtn text-ani" type="submit">Sign Up</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div>
+
+    <% if (message === "STARTING") { %>
+      <h5></h5>
+    <% } else {%>
+      <h5 style="color: red;"><%=message%></h5>
+      <% }%>      
+
+  </div>
+
+<script>
+  const titleBtn = document.getElementById("titleBtn");
+  const genreBtn = document.getElementById("genreBtn");
+  const titleField = document.querySelector(".title");
+  const genreField = document.querySelector(".genre");
+  const buttonLoader = document.getElementById("fetchButton");
+  const buttonLoader2 = document.getElementById("fetchButton2");
+
+  titleBtn.addEventListener("click", function () {
+    titleBtn.classList.add("active");
+    genreBtn.classList.remove("active");
+    titleField.style.display = "block";
+    genreField.style.display = "none";
+    titleField.classList.add("show");
+    genreField.classList.remove("show");
+
+    if (!titleBtn.classList.contains("active")) {
+      titleBtn.classList.add("active");
+      titleBtn.classList.remove("active");
+    }
+  });
+
+  genreBtn.addEventListener("click", function () {
+    genreBtn.classList.add("active");
+    titleBtn.classList.remove("active");
+    titleField.style.display = "none";
+    genreField.style.display = "block";
+    genreField.classList.add("show");
+    titleField.classList.remove("show");
+
+    if (!genreBtn.classList.contains("active")) {
+      genreBtn.classList.add("active");
+      genreBtn.classList.remove("active");
+    }
+  });
+</script>
+
+<%- include("footer") -%>

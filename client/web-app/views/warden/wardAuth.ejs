@@ -1,0 +1,73 @@
+<%- include("../templates/header") -%>
+
+<link rel="stylesheet" href="/styles/wardAuth.css" />
+ <h3>WARDEN PORTAL</h3>
+
+<div class="parent">
+  <div class="toggle-wrapper">
+    <div class="segmented-control">
+      <input
+        type="radio"
+        name="flight-type"
+        value="coach"
+        id="titleBtn"
+        checked
+      />
+      <h3 class="logIn">Log In</h3>
+    </div>
+  </div>
+</div>
+
+<div class="content">
+
+    <div id="titleField" class="field title">
+      <form action="/warden/handleLogin" id="titleForm" class="slide-left" method="post">
+        <h4>Welcome Back!</h4>
+
+        <input name="block" type="text" placeholder="Enter your block">
+        <input name="password" type="password" placeholder="Enter your password">
+        
+        <button id="fetchButton" class="mainBtn text-ani" type="submit">Log In</button>
+      </form>
+    </div>
+
+  </div>
+
+<script>
+  const titleBtn = document.getElementById("titleBtn");
+  const genreBtn = document.getElementById("genreBtn");
+  const titleField = document.querySelector(".title");
+  const genreField = document.querySelector(".genre");
+  const buttonLoader = document.getElementById("fetchButton");
+  const buttonLoader2 = document.getElementById("fetchButton2");
+
+  titleBtn.addEventListener("click", function () {
+    titleBtn.classList.add("active");
+    genreBtn.classList.remove("active");
+    titleField.style.display = "block";
+    genreField.style.display = "none";
+    titleField.classList.add("show");
+    genreField.classList.remove("show");
+
+    if (!titleBtn.classList.contains("active")) {
+      titleBtn.classList.add("active");
+      titleBtn.classList.remove("active");
+    }
+  });
+
+  genreBtn.addEventListener("click", function () {
+    genreBtn.classList.add("active");
+    titleBtn.classList.remove("active");
+    titleField.style.display = "none";
+    genreField.style.display = "block";
+    genreField.classList.add("show");
+    titleField.classList.remove("show");
+
+    if (!genreBtn.classList.contains("active")) {
+      genreBtn.classList.add("active");
+      genreBtn.classList.remove("active");
+    }
+  });
+</script>
+
+<%- include("../templates/footer") -%>

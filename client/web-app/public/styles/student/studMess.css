@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.card{
+    width: 300px;
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px;
+    height: 300px;
+    background-color: rgba(240, 248, 255, 0.342);
+}
+.card-body{
+    text-align: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+.text{
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    background-color: rgba(149, 149, 149, 0.409);
+    width: 700px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+select{
+    width: 180px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+h5{
+    padding-top: 50px;
+}
